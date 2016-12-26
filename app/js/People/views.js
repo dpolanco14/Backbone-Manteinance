@@ -140,7 +140,6 @@
             }
 
             this.$el.html(this.template());
-            this.stickit();
             return this;
         },
 
