@@ -1,0 +1,30 @@
+{
+  "name": "backboneexample",
+  "version": "1.0.0",
+  "description": "aplicacion de prueba",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo test"
+  },
+  "keywords": [
+    "test"
+  ],
+  "author": "delcio polanco",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-livereload": "^3.8.1",
+    "gulp-reload": "0.0.4",
+    "gulp-server-livereload": "^1.8.4"
+  },
+  "dependencies": {
+    "concat": "0.0.1-security",
+    "declare": "0.0.3",
+    "gulp-concat": "^2.6.0",
+    "gulp-declare": "^0.3.0",
+    "gulp-handlebars": "^4.0.0",
+    "gulp-wrap": "^0.13.0",
+    "handlebars": "^4.0.5",
+    "wrap": "^0.1.2"
+  }
+}

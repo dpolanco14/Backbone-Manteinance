@@ -1,0 +1,35 @@
+  html,
+  body, th {
+      margin: 0px;
+      padding: 0px;
+  }
+  
+  table {
+      width: 100%;
+  }
+  
+  table th {
+      background-color: #69c8e0
+  }
+  
+  table th, td {
+      text-align: center;
+      padding: 10px;
+  }
+  
+  .select {
+      width: 100%;
+  }
+  
+  .hidden {
+      display: none;
+  }
+  
+  div .loader {
+      width: 20px;
+      height: 20px;
+  }
+  
+  .tableContainer {
+      max-height: 400px;
+  }

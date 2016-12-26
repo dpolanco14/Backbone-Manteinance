@@ -1,0 +1,21 @@
+{
+  "name": "backboneexample",
+  "description": "aplicacion de prueba",
+  "main": "gulpfile.js",
+  "authors": [
+    "delcio polanco"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "test"
+  ],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
