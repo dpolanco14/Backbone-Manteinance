@@ -42,7 +42,7 @@ _.extend(Backbone.Validation.callbacks, {
     invalid: function (view, attr, error, selector) {
         var $el = view.$('[name=' + attr + ']'), 
             $group = $el.closest('.form-group');
-        
+        console.log(attr);
         $group.addClass('has-error');
         $group.find('.help-block').html(error).removeClass('hidden');
     }

@@ -19,7 +19,7 @@
             sex: {
                 required: true
             },
-            city: {
+            cityId: {
                 required: true
             }
         },
@@ -29,7 +29,7 @@
             lastName: '*',
             identification: '*',
             sex: '*',
-            city: '*'
+            cityId: '*'
         },
 
         url: 'http://beta.json-generator.com/api/json/get/NJizNcv4M',

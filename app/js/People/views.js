@@ -100,13 +100,14 @@
                     validate: true
                 }
             },
-            '[name=city]': {
-                observe: ['city'],
+            '[name=cityId]': {
+                observe: 'cityId',
                 initialize: function ($el) {
                     $el.select2({
                         allowClear: true
                     });
                 },
+
                 selectOptions: {
                     collection: function () {
                         return this.model.get('cities') || [];
@@ -116,7 +117,7 @@
 
                     defaultOption: {
                         label: 'Seleccione..',
-                        value: ''
+                        value: null
                     }
                 },
                 setOptions: {
@@ -127,7 +128,8 @@
 
         events: {
             'click #cancel': 'cancel',
-            'click #save': 'save'
+            'click #save': 'save',
+            'change #city': 'changeCity'
         },
 
         render: function () {
@@ -144,11 +146,8 @@
 
         successOnGet: function (model) {
             this.stickit();
-            if (global.editModel) {
-                this.$('#city').select2().val(this.model.get('cityId')).change();
-            }
-
             this.$(this.ui.loader).hide();
+            console.log(this.model.toJSON());
         },
 
         errorOnGet: function () {
@@ -177,6 +176,10 @@
                     self.cancel();
                 });
             }
+        },
+
+        changeCity: function (e) {
+
         }
     });
 
